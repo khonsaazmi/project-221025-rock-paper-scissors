@@ -30,16 +30,17 @@ function playGame(playerChoice) {
         }
     }
 
-    playerDisplay.textContent = `Player: ${playerChoice}`;
-    computerDisplay.textContent = `Computer: ${computerChoice}`;
+    playerDisplay.textContent = `Player: ${playerChoice}`; // Update player display
+    computerDisplay.textContent = `Computer: ${computerChoice}`; // Update computer display
     resultDisplay.textContent = result;
 
-    resultDisplay.classList.remove("greenText", "redText");
+    resultDisplay.classList.remove("greenText", "redText"); // Reset text color to default (black)
 
+    // Change text color based on result
     switch (result) {
         case "YOU WIN!":
-            resultDisplay.classList.add("greenText");
-            break;
+            resultDisplay.classList.add("greenText"); // Add greenText class
+            break; // Missing break added
         case "YOU LOSE!":
             resultDisplay.classList.add("redText");
             break;
