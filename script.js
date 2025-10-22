@@ -10,6 +10,4 @@ const resultDisplay = document.getElementById("resultDisplay");
 function playGame(playerChoice) {
 
     const computerChoice = choices[Math.floor(Math.random() * 3)]; // Random choice for computer
-
-    console.log(computerChoice); // For debugging
 }
