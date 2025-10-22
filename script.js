@@ -3,7 +3,7 @@
 // DOM Elements
 const choices = ["rock", "paper", "scissors"];
 const playerDisplay = document.getElementById("playerDisplay");
-const computerDisplay = document.getElementaById("computerDisplay");
+const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 
 // Game Logic
@@ -30,5 +30,7 @@ function playGame(playerChoice) {
         }
     }
 
-
+    playerDisplay.textContent = `Player: ${playerChoice}`;
+    computerDisplay.textContent = `Computer: ${computerChoice}`;
+    resultDisplay.textContent = result;
 }
